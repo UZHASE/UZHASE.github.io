@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>server.controllers package &mdash; bnbexplorer-backend 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bnbexplorer-backend
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">server.controllers package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-server.controllers.hosts_controller">server.controllers.hosts_controller module</a></li>
+<li><a class="reference internal" href="#module-server.controllers.layers_controller">server.controllers.layers_controller module</a></li>
+<li><a class="reference internal" href="#module-server.controllers.listings_controller">server.controllers.listings_controller module</a></li>
+<li><a class="reference internal" href="#module-server.controllers.recommendations_controller">server.controllers.recommendations_controller module</a></li>
+<li><a class="reference internal" href="#module-server.controllers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bnbexplorer-backend</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>server.controllers package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/server.controllers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="server-controllers-package">
+<h1>server.controllers package<a class="headerlink" href="#server-controllers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-server.controllers.hosts_controller">
+<span id="server-controllers-hosts-controller-module"></span><h2>server.controllers.hosts_controller module<a class="headerlink" href="#module-server.controllers.hosts_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="server.controllers.hosts_controller.find_host_by_id">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.hosts_controller.</span></code><code class="sig-name descname"><span class="pre">find_host_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.hosts_controller.find_host_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find Hosts by ID</p>
+<p>Returns a single Host matching the given ID # noqa: E501</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>host_id</strong> (<em>int</em>) – ID of Host to return</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="server.models.html#server.models.host.Host" title="server.models.host.Host">Host</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.controllers.layers_controller">
+<span id="server-controllers-layers-controller-module"></span><h2>server.controllers.layers_controller module<a class="headerlink" href="#module-server.controllers.layers_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="server.controllers.layers_controller.find_complaints_layer">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.layers_controller.</span></code><code class="sig-name descname"><span class="pre">find_complaints_layer</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.layers_controller.find_complaints_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Complaints Layer details</p>
+<p>Returns details to diyplay Complaints Layer (amount per neighbourhood)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="server.models.html#server.models.layer.Layer" title="server.models.layer.Layer">Layer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.layers_controller.find_crime_layer">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.layers_controller.</span></code><code class="sig-name descname"><span class="pre">find_crime_layer</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.layers_controller.find_crime_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Crime Layer details</p>
+<p>Returns details to diyplay Crime Layer (amount per neighbourhood)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="server.models.html#server.models.layer.Layer" title="server.models.layer.Layer">Layer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.layers_controller.find_health_layer">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.layers_controller.</span></code><code class="sig-name descname"><span class="pre">find_health_layer</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.layers_controller.find_health_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Health Layer details</p>
+<p>Returns details to diyplay Health Layer (amount per neighbourhood)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="server.models.html#server.models.layer.Layer" title="server.models.layer.Layer">Layer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.controllers.listings_controller">
+<span id="server-controllers-listings-controller-module"></span><h2>server.controllers.listings_controller module<a class="headerlink" href="#module-server.controllers.listings_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="server.controllers.listings_controller.find_listing_by_id">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.listings_controller.</span></code><code class="sig-name descname"><span class="pre">find_listing_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.listings_controller.find_listing_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find Listing by ID</p>
+<p>Returns a single Listing matching the given ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>listing_id</strong> (<em>int</em>) – ID of Listing to return</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="server.models.html#server.models.listing.Listing" title="server.models.listing.Listing">Listing</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.listings_controller.find_listings">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.listings_controller.</span></code><code class="sig-name descname"><span class="pre">find_listings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_nights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">availability</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listings_per_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">room_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.listings_controller.find_listings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve NYC AirBnB listings</p>
+<p>Returns a list of AirBnB Listings based on the provided filter criteria</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listing_name</strong> (<em>str</em>) – Name to match Listings (can bei either exact match or not)</p></li>
+<li><p><strong>host_id</strong> (<em>int</em>) – Filter Listings based on hostId</p></li>
+<li><p><strong>host_name</strong> (<em>str</em>) – Name to match Hosts of Listings (can bei either exact match or not)</p></li>
+<li><p><strong>location</strong> (<em>list of str</em>) – Filter Listings by their location</p></li>
+<li><p><strong>area</strong> (<em>list of str</em>) – Filter Listings by their area</p></li>
+<li><p><strong>price_min</strong> (<em>int</em>) – Filter Listings by minimum price</p></li>
+<li><p><strong>price_max</strong> (<em>int</em>) – Filter Listings by maximum price</p></li>
+<li><p><strong>min_nights</strong> (<em>int</em>) – Filter Listings by minimum nights</p></li>
+<li><p><strong>availability</strong> (<em>int</em>) – Filter Listings by their availability</p></li>
+<li><p><strong>listings_per_host</strong> (<em>int</em>) – Filter Listings by the number of Listings per Host</p></li>
+<li><p><strong>room_type</strong> (<em>list of str</em>) – Filter Listings by room type</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="server.models.html#server.models.listing.Listing" title="server.models.listing.Listing">Listing</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.listings_controller.find_reviews_for_listing">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.listings_controller.</span></code><code class="sig-name descname"><span class="pre">find_reviews_for_listing</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.listings_controller.find_reviews_for_listing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find Reviews for a given Listing</p>
+<p>Returns all Reviews for a single Listing matching the given ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>listing_id</strong> (<em>int</em>) – ID of Listing to return Reviews</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="server.models.html#server.models.review.Review" title="server.models.review.Review">Review</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.listings_controller.get_metadata">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.listings_controller.</span></code><code class="sig-name descname"><span class="pre">get_metadata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.listings_controller.get_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get metadata about all listings</p>
+<p>Returns basic statistics over all listings like min, max prices etc.
+:return: Object[ListingsMetadata]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.controllers.recommendations_controller">
+<span id="server-controllers-recommendations-controller-module"></span><h2>server.controllers.recommendations_controller module<a class="headerlink" href="#module-server.controllers.recommendations_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="server.controllers.recommendations_controller.recommend_listings">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.recommendations_controller.</span></code><code class="sig-name descname"><span class="pre">recommend_listings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listing_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_nights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">availability</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listings_per_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">room_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.recommendations_controller.recommend_listings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recommend AirBnBs based on provided filter criteria</p>
+<p>Returns a list of recommended Listings
+:param listing_id: target Listing ID
+:type listing_id: int
+:param host_id: host ID
+:type host_id: int
+:param listing_name: Name to match Listings (can bei either exact match or not)
+:type listing_name: str
+:param host_name: Name to match Hosts of Listings (can bei either exact match or not)
+:type host_name: str
+:param location: Filter Listings by their location
+:type location: list of str
+:param area: Filter Listings by their area
+:type area: list of str
+:param price_min: Filter Listings by minimum price
+:type price_min: int
+:param price_max: Filter Listings by maximum price
+:type price_max: int
+:param min_nights: Filter Listings by minimum nights
+:type min_nights: int
+:param availability: Filter Listings by their availability
+:type availability: int
+:param listings_per_host: Filter Listings by the number of Listings per Host
+:type listings_per_host: int
+:param room_type: Filter Listings by room type
+:type room_type: list of str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of Listing</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="server.controllers.recommendations_controller.recommend_listings_for_attractions">
+<code class="sig-prename descclassname"><span class="pre">server.controllers.recommendations_controller.</span></code><code class="sig-name descname"><span class="pre">recommend_listings_for_attractions</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.controllers.recommendations_controller.recommend_listings_for_attractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recommend closest AirBnBs based on a list of Attractions</p>
+<p>Returns a list of recommended Listings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="server.models.html#server.models.listing.Listing" title="server.models.listing.Listing">Listing</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.controllers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-server.controllers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, UZHASE.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>server.repositories package &mdash; bnbexplorer-backend 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bnbexplorer-backend
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">server.repositories package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-server.repositories.base_repository">server.repositories.base_repository module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.host_repository">server.repositories.host_repository module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.layer_repository">server.repositories.layer_repository module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.layer_strategy">server.repositories.layer_strategy module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.listing_repsotory">server.repositories.listing_repsotory module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.recommendations_repository">server.repositories.recommendations_repository module</a></li>
+<li><a class="reference internal" href="#module-server.repositories.review_repsotory">server.repositories.review_repsotory module</a></li>
+<li><a class="reference internal" href="#module-server.repositories">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bnbexplorer-backend</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>server.repositories package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/server.repositories.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="server-repositories-package">
+<h1>server.repositories package<a class="headerlink" href="#server-repositories-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-server.repositories.base_repository">
+<span id="server-repositories-base-repository-module"></span><h2>server.repositories.base_repository module<a class="headerlink" href="#module-server.repositories.base_repository" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.base_repository.Repository">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.base_repository.</span></code><code class="sig-name descname"><span class="pre">Repository</span></code><a class="headerlink" href="#server.repositories.base_repository.Repository" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="server.repositories.base_repository.Repository.ROW_LIMIT">
+<code class="sig-name descname"><span class="pre">ROW_LIMIT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1000</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.ROW_LIMIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.base_repository.Repository.execute_select_query">
+<code class="sig-name descname"><span class="pre">execute_select_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.execute_select_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="server.repositories.base_repository.Repository.hosts">
+<code class="sig-name descname"><span class="pre">hosts</span></code><em class="property"> <span class="pre">=</span> <span class="pre">Table('hosts')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.hosts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="server.repositories.base_repository.Repository.listings">
+<code class="sig-name descname"><span class="pre">listings</span></code><em class="property"> <span class="pre">=</span> <span class="pre">Table('listings')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.listings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.base_repository.Repository.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.base_repository.Repository.map_rt">
+<code class="sig-name descname"><span class="pre">map_rt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">room_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.map_rt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to map room_type field in a query</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>room_type</strong> – room_type string to map</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>numerical encoding of room_type</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.host_repository">
+<span id="server-repositories-host-repository-module"></span><h2>server.repositories.host_repository module<a class="headerlink" href="#module-server.repositories.host_repository" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.host_repository.Host">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.host_repository.</span></code><code class="sig-name descname"><span class="pre">Host</span></code><a class="headerlink" href="#server.repositories.host_repository.Host" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<dl class="py method">
+<dt id="server.repositories.host_repository.Host.build_get_by_id_query">
+<code class="sig-name descname"><span class="pre">build_get_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.build_get_by_id_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.host_repository.Host.get_by_id">
+<code class="sig-name descname"><span class="pre">get_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.host_repository.Host.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.layer_repository">
+<span id="server-repositories-layer-repository-module"></span><h2>server.repositories.layer_repository module<a class="headerlink" href="#module-server.repositories.layer_repository" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.layer_repository.Layer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_repository.</span></code><code class="sig-name descname"><span class="pre">Layer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strategy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<dl class="py method">
+<dt id="server.repositories.layer_repository.Layer.build_get_all_query">
+<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_repository.Layer.get_all">
+<code class="sig-name descname"><span class="pre">get_all</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.get_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_repository.Layer.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.layer_strategy">
+<span id="server-repositories-layer-strategy-module"></span><h2>server.repositories.layer_strategy module<a class="headerlink" href="#module-server.repositories.layer_strategy" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">ComplaintLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
+<p>Implement the complaint layer using the Strategy interface.</p>
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy.build_get_all_query">
+<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="server.repositories.layer_strategy.CrimeLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">CrimeLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
+<p>Implement the crime layer using the Strategy interface.</p>
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.CrimeLayerStrategy.build_get_all_query">
+<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.CrimeLayerStrategy.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="server.repositories.layer_strategy.HealthLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">HealthLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
+<p>Implement health layer using the Strategy interface.</p>
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.HealthLayerStrategy.build_get_all_query">
+<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.HealthLayerStrategy.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="server.repositories.layer_strategy.LayerStrategy">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">LayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Declare an interface common to all supported layers. Context
+uses this interface to call the layer defined by a
+LayerStrategy.</p>
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.LayerStrategy.build_get_all_query">
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.layer_strategy.LayerStrategy.map_result">
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.listing_repsotory">
+<span id="server-repositories-listing-repsotory-module"></span><h2>server.repositories.listing_repsotory module<a class="headerlink" href="#module-server.repositories.listing_repsotory" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.listing_repsotory.Listing">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.listing_repsotory.</span></code><code class="sig-name descname"><span class="pre">Listing</span></code><a class="headerlink" href="#server.repositories.listing_repsotory.Listing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.add_where_clauses">
+<code class="sig-name descname"><span class="pre">add_where_clauses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.add_where_clauses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.build_get_all_by_id_query">
+<code class="sig-name descname"><span class="pre">build_get_all_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_all_by_id_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.build_get_all_query">
+<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_all_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.build_get_by_id_query">
+<code class="sig-name descname"><span class="pre">build_get_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_by_id_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.get_all">
+<code class="sig-name descname"><span class="pre">get_all</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listings_filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.get_all_by_id">
+<code class="sig-name descname"><span class="pre">get_all_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.get_by_id">
+<code class="sig-name descname"><span class="pre">get_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.get_metadata">
+<code class="sig-name descname"><span class="pre">get_metadata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_metadata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.listing_repsotory.Listing.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.recommendations_repository">
+<span id="server-repositories-recommendations-repository-module"></span><h2>server.repositories.recommendations_repository module<a class="headerlink" href="#module-server.repositories.recommendations_repository" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.recommendations_repository.RecommendationsRepository">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.recommendations_repository.</span></code><code class="sig-name descname"><span class="pre">RecommendationsRepository</span></code><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<dl class="py method">
+<dt id="server.repositories.recommendations_repository.RecommendationsRepository.compute_n_recommendations">
+<code class="sig-name descname"><span class="pre">compute_n_recommendations</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listings_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.compute_n_recommendations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes n recommendations for a given target Listing</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listings_dict</strong> – Listings returned based on filter criteria</p></li>
+<li><p><strong>target</strong> – target Listing</p></li>
+<li><p><strong>n</strong> – number of recommendations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>IDs of recommendations</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if filter criteria was too restrictive or target cannot be found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.recommendations_repository.RecommendationsRepository.euclidean_distance">
+<code class="sig-name descname"><span class="pre">euclidean_distance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.euclidean_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes euclidean distance between target and a given row.
+Formula: ∑ √(A - B)^2 , where A and B are useful values in a given target and row
+:param target: target row to compute distance
+:param row: a row of our data
+:return: euclidean distance to target row</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.recommendations_repository.RecommendationsRepository.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings">
+<code class="sig-name descname"><span class="pre">recommend_n_listings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_filter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recommend n Listings factoring in the provided filter criteria</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listing_id</strong> – Listing ID of target</p></li>
+<li><p><strong>request_filter</strong> – filter criteria</p></li>
+<li><p><strong>n</strong> – number of recommendations to compute</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>recommended Listings</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if no ID or filter was provided or n &lt; 1</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories.review_repsotory">
+<span id="server-repositories-review-repsotory-module"></span><h2>server.repositories.review_repsotory module<a class="headerlink" href="#module-server.repositories.review_repsotory" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="server.repositories.review_repsotory.Review">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.review_repsotory.</span></code><code class="sig-name descname"><span class="pre">Review</span></code><a class="headerlink" href="#server.repositories.review_repsotory.Review" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<dl class="py method">
+<dt id="server.repositories.review_repsotory.Review.build_get_all_by_listing_id_query">
+<code class="sig-name descname"><span class="pre">build_get_all_by_listing_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.build_get_all_by_listing_id_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.review_repsotory.Review.get_all_by_listing_id">
+<code class="sig-name descname"><span class="pre">get_all_by_listing_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.get_all_by_listing_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="server.repositories.review_repsotory.Review.map_result">
+<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.map_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-server.repositories">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-server.repositories" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, UZHASE.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
