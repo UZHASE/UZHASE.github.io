@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -171,37 +174,28 @@
 <div class="section" id="module-server.repositories.base_repository">
 <span id="server-repositories-base-repository-module"></span><h2>server.repositories.base_repository module<a class="headerlink" href="#module-server.repositories.base_repository" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.base_repository.Repository">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.base_repository.</span></code><code class="sig-name descname"><span class="pre">Repository</span></code><a class="headerlink" href="#server.repositories.base_repository.Repository" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.base_repository.Repository">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.base_repository.</span></span><span class="sig-name descname"><span class="pre">Repository</span></span><a class="headerlink" href="#server.repositories.base_repository.Repository" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Repository base class defining common methods</p>
 <dl class="py attribute">
-<dt id="server.repositories.base_repository.Repository.ROW_LIMIT">
-<code class="sig-name descname"><span class="pre">ROW_LIMIT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1000</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.ROW_LIMIT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.base_repository.Repository.execute_select_query">
-<code class="sig-name descname"><span class="pre">execute_select_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.execute_select_query" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.base_repository.Repository.ROW_LIMIT">
+<span class="sig-name descname"><span class="pre">ROW_LIMIT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1000</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.ROW_LIMIT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="server.repositories.base_repository.Repository.hosts">
-<code class="sig-name descname"><span class="pre">hosts</span></code><em class="property"> <span class="pre">=</span> <span class="pre">Table('hosts')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.hosts" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.base_repository.Repository.hosts">
+<span class="sig-name descname"><span class="pre">hosts</span></span><em class="property"> <span class="pre">=</span> <span class="pre">Table('hosts')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.hosts" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="server.repositories.base_repository.Repository.listings">
-<code class="sig-name descname"><span class="pre">listings</span></code><em class="property"> <span class="pre">=</span> <span class="pre">Table('listings')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.listings" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.base_repository.Repository.listings">
+<span class="sig-name descname"><span class="pre">listings</span></span><em class="property"> <span class="pre">=</span> <span class="pre">Table('listings')</span></em><a class="headerlink" href="#server.repositories.base_repository.Repository.listings" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="server.repositories.base_repository.Repository.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.base_repository.Repository.map_rt">
-<code class="sig-name descname"><span class="pre">map_rt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">room_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.map_rt" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.base_repository.Repository.map_rt">
+<span class="sig-name descname"><span class="pre">map_rt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">room_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.base_repository.Repository.map_rt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to map room_type field in a query</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -219,23 +213,26 @@
 <div class="section" id="module-server.repositories.host_repository">
 <span id="server-repositories-host-repository-module"></span><h2>server.repositories.host_repository module<a class="headerlink" href="#module-server.repositories.host_repository" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.host_repository.Host">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.host_repository.</span></code><code class="sig-name descname"><span class="pre">Host</span></code><a class="headerlink" href="#server.repositories.host_repository.Host" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.host_repository.Host">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.host_repository.</span></span><span class="sig-name descname"><span class="pre">Host</span></span><a class="headerlink" href="#server.repositories.host_repository.Host" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<p>Repository for Host object access</p>
 <dl class="py method">
-<dt id="server.repositories.host_repository.Host.build_get_by_id_query">
-<code class="sig-name descname"><span class="pre">build_get_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.build_get_by_id_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.host_repository.Host.get_by_id">
-<code class="sig-name descname"><span class="pre">get_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.get_by_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.host_repository.Host.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.host_repository.Host.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.host_repository.Host.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a single Host by ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>host_id</strong> – ID of Host</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Host matching the given ID</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#server.repositories.host_repository.Host" title="server.repositories.host_repository.Host">Host</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -243,23 +240,23 @@
 <div class="section" id="module-server.repositories.layer_repository">
 <span id="server-repositories-layer-repository-module"></span><h2>server.repositories.layer_repository module<a class="headerlink" href="#module-server.repositories.layer_repository" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.layer_repository.Layer">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_repository.</span></code><code class="sig-name descname"><span class="pre">Layer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strategy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.layer_repository.Layer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.layer_repository.</span></span><span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strategy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<p>Repository for Layer object access</p>
 <dl class="py method">
-<dt id="server.repositories.layer_repository.Layer.build_get_all_query">
-<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_repository.Layer.get_all">
-<code class="sig-name descname"><span class="pre">get_all</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.get_all" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_repository.Layer.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.layer_repository.Layer.get_all">
+<span class="sig-name descname"><span class="pre">get_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_repository.Layer.get_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all Layer information to be used for Heatmaps</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Layer containing Heatmap data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#server.repositories.layer_repository.Layer" title="server.repositories.layer_repository.Layer">Layer</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -267,126 +264,121 @@
 <div class="section" id="module-server.repositories.layer_strategy">
 <span id="server-repositories-layer-strategy-module"></span><h2>server.repositories.layer_strategy module<a class="headerlink" href="#module-server.repositories.layer_strategy" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">ComplaintLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.layer_strategy.ComplaintLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></span><span class="sig-name descname"><span class="pre">ComplaintLayerStrategy</span></span><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
 <p>Implement the complaint layer using the Strategy interface.</p>
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy.build_get_all_query">
-<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.ComplaintLayerStrategy.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.ComplaintLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
-<dt id="server.repositories.layer_strategy.CrimeLayerStrategy">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">CrimeLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.layer_strategy.CrimeLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></span><span class="sig-name descname"><span class="pre">CrimeLayerStrategy</span></span><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
 <p>Implement the crime layer using the Strategy interface.</p>
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.CrimeLayerStrategy.build_get_all_query">
-<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.CrimeLayerStrategy.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.CrimeLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
-<dt id="server.repositories.layer_strategy.HealthLayerStrategy">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">HealthLayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.layer_strategy.HealthLayerStrategy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></span><span class="sig-name descname"><span class="pre">HealthLayerStrategy</span></span><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.layer_strategy.LayerStrategy" title="server.repositories.layer_strategy.LayerStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.layer_strategy.LayerStrategy</span></code></a></p>
 <p>Implement health layer using the Strategy interface.</p>
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.HealthLayerStrategy.build_get_all_query">
-<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.HealthLayerStrategy.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.HealthLayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
-<dt id="server.repositories.layer_strategy.LayerStrategy">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></code><code class="sig-name descname"><span class="pre">LayerStrategy</span></code><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.layer_strategy.LayerStrategy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.layer_strategy.</span></span><span class="sig-name descname"><span class="pre">LayerStrategy</span></span><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Declare an interface common to all supported layers. Context
 uses this interface to call the layer defined by a
 LayerStrategy.</p>
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.LayerStrategy.build_get_all_query">
-<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.layer_strategy.LayerStrategy.map_result">
-<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.layer_strategy.LayerStrategy.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div>
 <div class="section" id="module-server.repositories.listing_repsotory">
 <span id="server-repositories-listing-repsotory-module"></span><h2>server.repositories.listing_repsotory module<a class="headerlink" href="#module-server.repositories.listing_repsotory" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.listing_repsotory.Listing">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.listing_repsotory.</span></code><code class="sig-name descname"><span class="pre">Listing</span></code><a class="headerlink" href="#server.repositories.listing_repsotory.Listing" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.listing_repsotory.</span></span><span class="sig-name descname"><span class="pre">Listing</span></span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<p>Repository for Listing object access</p>
 <dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.add_where_clauses">
-<code class="sig-name descname"><span class="pre">add_where_clauses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.add_where_clauses" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing.add_where_clauses">
+<span class="sig-name descname"><span class="pre">add_where_clauses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.add_where_clauses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct SQL WHERE clauses based on the given filter criteria</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> – a given SQL query to be enhanced</p></li>
+<li><p><strong>filter</strong> – Listing filter criteria</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SQL query ready to be executed</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.build_get_all_by_id_query">
-<code class="sig-name descname"><span class="pre">build_get_all_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_all_by_id_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing.get_all">
+<span class="sig-name descname"><span class="pre">get_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listings_filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all Listings based on the provided filter criteria</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>listings_filter</strong> – filter criteria for Listings</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>all Listings matching the given filter criteria</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#server.repositories.listing_repsotory.Listing" title="server.repositories.listing_repsotory.Listing">Listing</a>]</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.build_get_all_query">
-<code class="sig-name descname"><span class="pre">build_get_all_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_all_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing.get_all_by_id">
+<span class="sig-name descname"><span class="pre">get_all_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all Listings by the given IDs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id_list</strong> – list of Listing IDs</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>all Listings matching the given IDs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#server.repositories.listing_repsotory.Listing" title="server.repositories.listing_repsotory.Listing">Listing</a>]</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.build_get_by_id_query">
-<code class="sig-name descname"><span class="pre">build_get_by_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.build_get_by_id_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a single Listing by its ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>listing_id</strong> – ID of Listing</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the Listing matching the given ID</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#server.repositories.listing_repsotory.Listing" title="server.repositories.listing_repsotory.Listing">Listing</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.get_all">
-<code class="sig-name descname"><span class="pre">get_all</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listings_filter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.get_all_by_id">
-<code class="sig-name descname"><span class="pre">get_all_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_all_by_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.get_by_id">
-<code class="sig-name descname"><span class="pre">get_by_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_by_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.get_metadata">
-<code class="sig-name descname"><span class="pre">get_metadata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_metadata" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.listing_repsotory.Listing.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.listing_repsotory.Listing.get_metadata">
+<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.listing_repsotory.Listing.get_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Listing metadata (min values, max values, enums, etc.)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Listing metadata</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -394,48 +386,13 @@ LayerStrategy.</p>
 <div class="section" id="module-server.repositories.recommendations_repository">
 <span id="server-repositories-recommendations-repository-module"></span><h2>server.repositories.recommendations_repository module<a class="headerlink" href="#module-server.repositories.recommendations_repository" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.recommendations_repository.RecommendationsRepository">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.recommendations_repository.</span></code><code class="sig-name descname"><span class="pre">RecommendationsRepository</span></code><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.recommendations_repository.RecommendationsRepository">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.recommendations_repository.</span></span><span class="sig-name descname"><span class="pre">RecommendationsRepository</span></span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<p>Repository to compute Recommendations</p>
 <dl class="py method">
-<dt id="server.repositories.recommendations_repository.RecommendationsRepository.compute_n_recommendations">
-<code class="sig-name descname"><span class="pre">compute_n_recommendations</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listings_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.compute_n_recommendations" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes n recommendations for a given target Listing</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>listings_dict</strong> – Listings returned based on filter criteria</p></li>
-<li><p><strong>target</strong> – target Listing</p></li>
-<li><p><strong>n</strong> – number of recommendations</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>IDs of recommendations</p>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if filter criteria was too restrictive or target cannot be found</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.recommendations_repository.RecommendationsRepository.euclidean_distance">
-<code class="sig-name descname"><span class="pre">euclidean_distance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.euclidean_distance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes euclidean distance between target and a given row.
-Formula: ∑ √(A - B)^2 , where A and B are useful values in a given target and row
-:param target: target row to compute distance
-:param row: a row of our data
-:return: euclidean distance to target row</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.recommendations_repository.RecommendationsRepository.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings">
-<code class="sig-name descname"><span class="pre">recommend_n_listings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_filter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings">
+<span class="sig-name descname"><span class="pre">recommend_n_listings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_filter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.recommendations_repository.RecommendationsRepository.recommend_n_listings" title="Permalink to this definition">¶</a></dt>
 <dd><p>Recommend n Listings factoring in the provided filter criteria</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -460,23 +417,26 @@ Formula: ∑ √(A - B)^2 , where A and B are useful values in a given target an
 <div class="section" id="module-server.repositories.review_repsotory">
 <span id="server-repositories-review-repsotory-module"></span><h2>server.repositories.review_repsotory module<a class="headerlink" href="#module-server.repositories.review_repsotory" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.repositories.review_repsotory.Review">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.repositories.review_repsotory.</span></code><code class="sig-name descname"><span class="pre">Review</span></code><a class="headerlink" href="#server.repositories.review_repsotory.Review" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.repositories.review_repsotory.Review">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.repositories.review_repsotory.</span></span><span class="sig-name descname"><span class="pre">Review</span></span><a class="headerlink" href="#server.repositories.review_repsotory.Review" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#server.repositories.base_repository.Repository" title="server.repositories.base_repository.Repository"><code class="xref py py-class docutils literal notranslate"><span class="pre">server.repositories.base_repository.Repository</span></code></a></p>
+<p>Repository for Review object access</p>
 <dl class="py method">
-<dt id="server.repositories.review_repsotory.Review.build_get_all_by_listing_id_query">
-<code class="sig-name descname"><span class="pre">build_get_all_by_listing_id_query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.build_get_all_by_listing_id_query" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.review_repsotory.Review.get_all_by_listing_id">
-<code class="sig-name descname"><span class="pre">get_all_by_listing_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.get_all_by_listing_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="server.repositories.review_repsotory.Review.map_result">
-<code class="sig-name descname"><span class="pre">map_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.map_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="server.repositories.review_repsotory.Review.get_all_by_listing_id">
+<span class="sig-name descname"><span class="pre">get_all_by_listing_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.repositories.review_repsotory.Review.get_all_by_listing_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all Reviews for a given Listing ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>listing_id</strong> – ID of a Listing</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>all reviews for a given Listing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#server.repositories.review_repsotory.Review" title="server.repositories.review_repsotory.Review">Review</a>]</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

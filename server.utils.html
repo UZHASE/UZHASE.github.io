@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -167,21 +170,32 @@
 <div class="section" id="module-server.utils.encoder">
 <span id="server-utils-encoder-module"></span><h2>server.utils.encoder module<a class="headerlink" href="#module-server.utils.encoder" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="server.utils.encoder.JSONEncoder">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">server.utils.encoder.</span></code><code class="sig-name descname"><span class="pre">JSONEncoder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipkeys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ascii</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_circular</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.encoder.JSONEncoder" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.encoder.JSONEncoder">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server.utils.encoder.</span></span><span class="sig-name descname"><span class="pre">JSONEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipkeys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ascii</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_circular</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.encoder.JSONEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">connexion.apps.flask_app.FlaskJSONEncoder</span></code></p>
 <dl class="py method">
-<dt id="server.utils.encoder.JSONEncoder.default">
-<code class="sig-name descname"><span class="pre">default</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.encoder.JSONEncoder.default" title="Permalink to this definition">¶</a></dt>
-<dd><p>Convert <code class="docutils literal notranslate"><span class="pre">o</span></code> to a JSON serializable type. See
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">json.JSONEncoder.default()</span></code>. Python does not support
-overriding how basic types like <code class="docutils literal notranslate"><span class="pre">str</span></code> or <code class="docutils literal notranslate"><span class="pre">list</span></code> are
-serialized, they are handled before this method.</p>
+<dt class="sig sig-object py" id="server.utils.encoder.JSONEncoder.default">
+<span class="sig-name descname"><span class="pre">default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.encoder.JSONEncoder.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement this method in a subclass such that it returns a
+serializable object for <code class="docutils literal notranslate"><span class="pre">o</span></code>, or calls the base implementation (to
+raise a <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>).</p>
+<p>For example, to support arbitrary iterators, you could implement
+default like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">iterable</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">JSONEncoder</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="server.utils.encoder.JSONEncoder.include_nulls">
-<code class="sig-name descname"><span class="pre">include_nulls</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#server.utils.encoder.JSONEncoder.include_nulls" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.encoder.JSONEncoder.include_nulls">
+<span class="sig-name descname"><span class="pre">include_nulls</span></span><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#server.utils.encoder.JSONEncoder.include_nulls" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -190,8 +204,8 @@ serialized, they are handled before this method.</p>
 <div class="section" id="module-server.utils.util">
 <span id="server-utils-util-module"></span><h2>server.utils.util module<a class="headerlink" href="#module-server.utils.util" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="server.utils.util.deserialize_date">
-<code class="sig-prename descclassname"><span class="pre">server.utils.util.</span></code><code class="sig-name descname"><span class="pre">deserialize_date</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_date" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.util.deserialize_date">
+<span class="sig-prename descclassname"><span class="pre">server.utils.util.</span></span><span class="sig-name descname"><span class="pre">deserialize_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deserializes string to date.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -207,8 +221,8 @@ serialized, they are handled before this method.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="server.utils.util.deserialize_datetime">
-<code class="sig-prename descclassname"><span class="pre">server.utils.util.</span></code><code class="sig-name descname"><span class="pre">deserialize_datetime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_datetime" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.util.deserialize_datetime">
+<span class="sig-prename descclassname"><span class="pre">server.utils.util.</span></span><span class="sig-name descname"><span class="pre">deserialize_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_datetime" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deserializes string to datetime.</p>
 <p>The string should be in iso8601 datetime format.</p>
 <dl class="field-list simple">
@@ -225,8 +239,8 @@ serialized, they are handled before this method.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="server.utils.util.deserialize_model">
-<code class="sig-prename descclassname"><span class="pre">server.utils.util.</span></code><code class="sig-name descname"><span class="pre">deserialize_model</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">klass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_model" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.util.deserialize_model">
+<span class="sig-prename descclassname"><span class="pre">server.utils.util.</span></span><span class="sig-name descname"><span class="pre">deserialize_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">klass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.util.deserialize_model" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deserializes list or dict to model.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -245,8 +259,8 @@ serialized, they are handled before this method.</p>
 <div class="section" id="module-server.utils.validation">
 <span id="server-utils-validation-module"></span><h2>server.utils.validation module<a class="headerlink" href="#module-server.utils.validation" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="server.utils.validation.no_none_args">
-<code class="sig-prename descclassname"><span class="pre">server.utils.validation.</span></code><code class="sig-name descname"><span class="pre">no_none_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.validation.no_none_args" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="server.utils.validation.no_none_args">
+<span class="sig-prename descclassname"><span class="pre">server.utils.validation.</span></span><span class="sig-name descname"><span class="pre">no_none_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.utils.validation.no_none_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decorator to check if arguments are None.</p>
 <p>Usage:</p>
 <p>&#64;no_none_args
